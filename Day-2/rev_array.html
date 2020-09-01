@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reverse_array</title>
+</head>
+<body>
+
+		<h2>Click the button to reverse the order of the elements in the array.</h2>
+
+		<button onclick="myfunction()">Reverse_Array </button>
+
+		<p id="reverse_array"></p>
+
+
+		<script>
+			var elements = ["abc",  "pqr","info", "xyz", "data", "sql"];
+			document.getElementById("reverse_array").innerHTML = elements;
+			
+				function myfunction() {
+			  	elements.reverse();
+			  	document.getElementById("reverse_array").innerHTML = elements;
+			}
+		</script>
+
+</body>
+</html>

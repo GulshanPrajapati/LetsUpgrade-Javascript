@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>String_containg_a</title>
+</head>
+<body>
+	
+	<button onclick="showName()">Show the Name containg 'a'</button>
+	<h1 id="result">The names are going to be shown here... </h1>
+
+	<script type="text/javascript">
+		let totalNumberOfElement = prompt("Enter the number element you want in Array");
+		let listOfElement=[];
+		for(let i =0 ; i<totalNumberOfElement ; i++)
+		{
+			let num = prompt("Enter the name");
+			listOfElement.push(num);
+		}
+		function showName(){
+			for(let i= 0 ; i < listOfElement.length ; i++)
+			{	
+
+				for(let j=0 ; j< listOfElement[i].length ;j++)
+				{
+					{
+						if(listOfElement[i].charAt(j) == 'a' || listOfElement[i].charAt(j) == 'A' )
+
+							console.log(listOfElement[i]);
+							continue;
+					}
+
+				}
+				
+			}
+		}
+</script>
+</body>
+</html>
